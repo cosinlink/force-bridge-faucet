@@ -22,17 +22,17 @@ const chainList = [
 
 const addressList = [
     {
-        dai: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
-        usdt: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
-        usdc: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+        dai: '0x903C7d9bBbFE765fb4abAf1F43311bc1baf7012C',
+        usdt: '0xe90dF1482bd7D97Bde2B61475f707d35c440da6E',
+        usdc: '0x68Bb61e383E88dB95AC5ff6CD3c70689a24454Ba',
 
         ckb_chain: '',
         token_locker: '',
     },
     {
-        dai: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
-        usdt: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
-        usdc: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
+        dai: '0x903C7d9bBbFE765fb4abAf1F43311bc1baf7012C',
+        usdt: '0xe90dF1482bd7D97Bde2B61475f707d35c440da6E',
+        usdc: '0x68Bb61e383E88dB95AC5ff6CD3c70689a24454Ba',
 
         ckb_chain: '',
         token_locker: '',
