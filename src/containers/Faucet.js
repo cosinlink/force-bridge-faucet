@@ -1,43 +1,56 @@
 import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
-import { AppContext } from '../App'
-import { useSnakeMove } from '../hooks/snake'
+import {getUserBalance, postGetTestToken} from '../contract/erc20'
 const log = console.log.bind(console)
 
 const StyledButton = styled.button`
     margin-top: 40px;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
     background: palevioletred;
+    width: 12em;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 0.3em 1.2em;
     border: 2px solid palevioletred;
     border-radius: 3px;
-    margin-left: 0.5em;
+    // margin-left: 0.5em;
 `
 
 const StyledContainer = styled.div`
+    border: 3px dashed red;
     text-align: center;
-    margin: 0 auto;
+    // margin: 0 auto;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
 `
 
-const Faucet = () => {
+const Faucet = ({ wallet }) => {
     const getTestToken = (tokenName) => {
         return () => {
-            log(`getTestToken: ${tokenName}`)
+            log(`getTestToken: ${tokenName}, userAddr: ${wallet.account}`)
+            getUserBalance(tokenName.toLowerCase(), wallet.account)
+                .then((amount) => {
+                    log(amount)
+                })
+
+            postGetTestToken(tokenName.toLowerCase(), wallet.account)
+                .then((result) => {
+                    log(result)
+                })
         }
     }
 
     return (
         <StyledContainer>
-            <StyledButton onClick={getTestToken('DAI')}>
+            <StyledButton onClick={getTestToken('dai')}>
                 Get 100 DAI
             </StyledButton>
-            <StyledButton onClick={getTestToken('USDT')}>
+            <StyledButton onClick={getTestToken('usdt')}>
                 Get 100 USDT
             </StyledButton>
-            <StyledButton onClick={getTestToken('USDC')}>
+            <StyledButton onClick={getTestToken('usdc')}>
                 Get 100 USDC
             </StyledButton>
         </StyledContainer>
