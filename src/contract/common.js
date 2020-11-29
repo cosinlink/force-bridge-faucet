@@ -7,10 +7,10 @@ const uint256Max = `0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 
 const chainList = [
     {
-        // yarn build => Ethereum Mainnet
-        id: 1,
-        networkName: 'Mainnet',
-        rpcUrl: 'https://mainnet.eth.aragon.network/',
+        // yarn build => Ethereum Ropsten Testnet
+        id: 3,
+        networkName: 'Ropsten',
+        rpcUrl: 'https://ropsten.eth.aragon.network/',
     },
     {
         // yarn build => Ethereum Ropsten Testnet
