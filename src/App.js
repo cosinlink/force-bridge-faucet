@@ -2,27 +2,57 @@ import React, {useState} from 'react'
 import './App.css'
 import Faucet from './containers/Faucet'
 import Balances from './containers/Balances'
+import TopBar from "./containers/TopBar/TopBar";
 import styled from 'styled-components'
-import {useWallet} from 'use-wallet'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {useWallet, UseWalletProvider} from 'use-wallet'
+import {ThemeProvider} from 'styled-components'
+import {chain} from "./contract/common";
+import theme from './theme'
+import Container from "./containers/Container";
 
 export const AppContext = React.createContext({})
 
-const StyledContainer = styled.div`
-    display: flex;
-    // align-items: center;
-    font-size: 16px;
+const StyledDiv = styled.div`
+    display: hidden;
+    height: 30px;
     width: 100%;
-    height: 100%;
 `
 
-function App() {
+const WalletProvider = () => {
     const wallet = useWallet()
     return (
+        <>
+            <Router>
+                <TopBar wallet={wallet}/>
+                <Route path="/" exact>
+                    <Container>
+                        <Container>
+                            <Faucet wallet={wallet}/>
+                        </Container>
+                        <StyledDiv/>
+                        <Container>
+                            <Balances wallet={wallet}/>
+                        </Container>
+                    </Container>
+                </Route>
+            </Router>
+        </>
+    )
+}
 
-        <StyledContainer>
-            <Faucet wallet={wallet}/>
-            <Balances wallet={wallet}/>
-        </StyledContainer>
+const App = () => {
+    return (
+        <ThemeProvider theme={theme}>
+            <UseWalletProvider
+                chainId={chain.id}
+                connectors={{walletconnect: {rpcUrl: chain.rpcUrl}}}
+            >
+                <WalletProvider>
+                </WalletProvider>
+            </UseWalletProvider>
+        </ThemeProvider>
+
     )
 }
 

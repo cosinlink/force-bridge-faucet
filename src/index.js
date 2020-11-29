@@ -3,17 +3,10 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import {UseWalletProvider} from "use-wallet";
-import {chain} from "./contract/common";
 
 ReactDOM.render(
     <React.StrictMode>
-        <UseWalletProvider
-            chainId={chain.id}
-            connectors={{ walletconnect: { rpcUrl: chain.rpcUrl } }}
-        >
-            <App />
-        </UseWalletProvider>
+        <App/>
     </React.StrictMode>,
     document.getElementById('root')
 )

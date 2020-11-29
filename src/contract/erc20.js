@@ -3,7 +3,6 @@ const log = console.log.bind(console)
 init()
 
 export const getUserBalance = (tokenName, userWalletAddress) => {
-    log(web3)
     if (!contracts[tokenName]) {
         return Promise.resolve('0');
     }
@@ -11,10 +10,7 @@ export const getUserBalance = (tokenName, userWalletAddress) => {
         return Promise.resolve('0');
     }
     return contracts[tokenName].methods.balanceOf(userWalletAddress).call().then((result) => {
-        if (tokenName === 'usdt' || tokenName === 'usdc') {
-            return Promise.resolve(web3.utils.fromWei(result.toString(), 'mwei'));
-        }
-        return Promise.resolve(web3.utils.fromWei(result.toString(), 'ether'));
+        return Promise.resolve(result.toString());
     });
 };
 
