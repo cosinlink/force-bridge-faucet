@@ -25,17 +25,15 @@ const WalletProvider = () => {
         <>
             <Router>
                 <TopBar wallet={wallet}/>
-                <Route path="/" exact>
+                <Container>
                     <Container>
-                        <Container>
-                            <Faucet wallet={wallet}/>
-                        </Container>
-                        <StyledDiv/>
-                        <Container>
-                            <Balances wallet={wallet}/>
-                        </Container>
+                        <Faucet wallet={wallet}/>
                     </Container>
-                </Route>
+                    <StyledDiv/>
+                    <Container>
+                        <Balances wallet={wallet}/>
+                    </Container>
+                </Container>
             </Router>
         </>
     )
