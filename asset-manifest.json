@@ -3,8 +3,8 @@
     "static/js/0.bb000ce4.chunk.js": "/force-bridge-faucet/static/js/0.bb000ce4.chunk.js",
     "static/js/0.bb000ce4.chunk.js.map": "/force-bridge-faucet/static/js/0.bb000ce4.chunk.js.map",
     "main.css": "/force-bridge-faucet/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/force-bridge-faucet/static/js/main.948d6ed2.chunk.js",
-    "main.js.map": "/force-bridge-faucet/static/js/main.948d6ed2.chunk.js.map",
+    "main.js": "/force-bridge-faucet/static/js/main.1e663acf.chunk.js",
+    "main.js.map": "/force-bridge-faucet/static/js/main.1e663acf.chunk.js.map",
     "runtime-main.js": "/force-bridge-faucet/static/js/runtime-main.f00a8471.js",
     "runtime-main.js.map": "/force-bridge-faucet/static/js/runtime-main.f00a8471.js.map",
     "static/js/3.311428e4.chunk.js": "/force-bridge-faucet/static/js/3.311428e4.chunk.js",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.f00a8471.js",
     "static/js/3.311428e4.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.948d6ed2.chunk.js"
+    "static/js/main.1e663acf.chunk.js"
   ]
 }
