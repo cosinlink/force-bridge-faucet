@@ -46,8 +46,7 @@ const App = () => {
                 chainId={chain.id}
                 connectors={{walletconnect: {rpcUrl: chain.rpcUrl}}}
             >
-                <WalletProvider>
-                </WalletProvider>
+                <WalletProvider/>
             </UseWalletProvider>
         </ThemeProvider>
 
