@@ -1,0 +1,41 @@
+{
+  "files": {
+    "static/js/0.bb000ce4.chunk.js": "/force-bridge-faucet/static/js/0.bb000ce4.chunk.js",
+    "static/js/0.bb000ce4.chunk.js.map": "/force-bridge-faucet/static/js/0.bb000ce4.chunk.js.map",
+    "main.css": "/force-bridge-faucet/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/force-bridge-faucet/static/js/main.948d6ed2.chunk.js",
+    "main.js.map": "/force-bridge-faucet/static/js/main.948d6ed2.chunk.js.map",
+    "runtime-main.js": "/force-bridge-faucet/static/js/runtime-main.f00a8471.js",
+    "runtime-main.js.map": "/force-bridge-faucet/static/js/runtime-main.f00a8471.js.map",
+    "static/js/3.311428e4.chunk.js": "/force-bridge-faucet/static/js/3.311428e4.chunk.js",
+    "static/js/3.311428e4.chunk.js.map": "/force-bridge-faucet/static/js/3.311428e4.chunk.js.map",
+    "static/js/4.ffa26f21.chunk.js": "/force-bridge-faucet/static/js/4.ffa26f21.chunk.js",
+    "static/js/4.ffa26f21.chunk.js.map": "/force-bridge-faucet/static/js/4.ffa26f21.chunk.js.map",
+    "static/js/5.6a3ad4ba.chunk.js": "/force-bridge-faucet/static/js/5.6a3ad4ba.chunk.js",
+    "static/js/5.6a3ad4ba.chunk.js.map": "/force-bridge-faucet/static/js/5.6a3ad4ba.chunk.js.map",
+    "static/js/6.62fa01cb.chunk.js": "/force-bridge-faucet/static/js/6.62fa01cb.chunk.js",
+    "static/js/6.62fa01cb.chunk.js.map": "/force-bridge-faucet/static/js/6.62fa01cb.chunk.js.map",
+    "static/js/7.5fa168e6.chunk.js": "/force-bridge-faucet/static/js/7.5fa168e6.chunk.js",
+    "static/js/7.5fa168e6.chunk.js.map": "/force-bridge-faucet/static/js/7.5fa168e6.chunk.js.map",
+    "static/js/8.6027c0fb.chunk.js": "/force-bridge-faucet/static/js/8.6027c0fb.chunk.js",
+    "static/js/8.6027c0fb.chunk.js.map": "/force-bridge-faucet/static/js/8.6027c0fb.chunk.js.map",
+    "static/js/9.cce89424.chunk.js": "/force-bridge-faucet/static/js/9.cce89424.chunk.js",
+    "static/js/9.cce89424.chunk.js.map": "/force-bridge-faucet/static/js/9.cce89424.chunk.js.map",
+    "static/js/10.d62d956b.chunk.js": "/force-bridge-faucet/static/js/10.d62d956b.chunk.js",
+    "static/js/10.d62d956b.chunk.js.map": "/force-bridge-faucet/static/js/10.d62d956b.chunk.js.map",
+    "static/js/11.29466f9b.chunk.js": "/force-bridge-faucet/static/js/11.29466f9b.chunk.js",
+    "static/js/11.29466f9b.chunk.js.map": "/force-bridge-faucet/static/js/11.29466f9b.chunk.js.map",
+    "index.html": "/force-bridge-faucet/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/force-bridge-faucet/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/3.311428e4.chunk.js.LICENSE.txt": "/force-bridge-faucet/static/js/3.311428e4.chunk.js.LICENSE.txt",
+    "static/js/5.6a3ad4ba.chunk.js.LICENSE.txt": "/force-bridge-faucet/static/js/5.6a3ad4ba.chunk.js.LICENSE.txt",
+    "static/js/6.62fa01cb.chunk.js.LICENSE.txt": "/force-bridge-faucet/static/js/6.62fa01cb.chunk.js.LICENSE.txt",
+    "static/js/9.cce89424.chunk.js.LICENSE.txt": "/force-bridge-faucet/static/js/9.cce89424.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f00a8471.js",
+    "static/js/3.311428e4.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.948d6ed2.chunk.js"
+  ]
+}
