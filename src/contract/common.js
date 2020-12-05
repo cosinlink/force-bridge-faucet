@@ -4,7 +4,6 @@ import Web3 from 'web3'
 import erc20Abi from './abi/test-erc20.json'
 const uint256Max = `0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff`
 
-
 const chainList = [
     {
         // yarn build => Ethereum Ropsten Testnet
@@ -60,7 +59,7 @@ const init = () => {
 
     // eslint-disable-next-line array-callback-return
     Object.keys(contracts).map((key) => {
-        if (key !== "") {
+        if (key !== '') {
             contracts[key] = new Contract(erc20Abi, address[key])
         }
     })
