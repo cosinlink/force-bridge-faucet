@@ -14,7 +14,7 @@ const AccountButton = ({wallet}) => {
   return (
     <StyledAccountButton>
       {!wallet.account ? (
-        <Button onClick={handleConnectClick} size="sm" text="Connect Wallet" />
+        <Button onClick={handleConnectClick} size="sm" text="Connect Ropsten Wallet" />
       ) : (
         <Button onClick={handleDisConnectClick} size="sm" text="Disconnect" />
       )}
